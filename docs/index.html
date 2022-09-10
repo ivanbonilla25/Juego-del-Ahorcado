@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del ahorcado</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/orca.css">
+</head>
+
+<body>
+    <main>
+        <section id="contenedor-inicio">
+            <button class="boton-iniciar" id="iniciar-juego">Iniciar Juego</button>
+            <button class="boton-agregar" id="agregar-palabra">Agregar palabra</button>
+            <div id="contenedor-palabra-personalizada">
+                <ul id="texto-informacion-auxiliar"></ul>
+                <label for="palabra-personalizada"></label>
+                <input id="palabra-personalizada" type="text" maxlength="8" placeholder="Escribe tu palabra">
+                <div>
+                    <img class="vectorInfo" src="recursos/info.svg" alt="">
+                    <p class="texto-info">Min 3, Max 8 caracteres</p>
+                    <div class="contenedor-botones">
+                        <button id="boton-aceptar" class="boton-en-linea">agregar</button>
+                        <button id="boton-cancelar" class="boton-en-linea">cancelar</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="contenedor-juego">
+            <div id="boton-retroceso"><img src="recursos/volver-flecha.png" alt=""></div>
+            <div class="contenedor-orca">
+                <span id="base"></span>
+                <span id="palo"></span>
+                <span id="superior"></span>
+                <span id="soga"></span>
+                <img src="recursos/cabeza.svg" alt="cabeza del muñeco" id="cabeza">
+                <div id="contenedor-ojos">
+                    <samp id="ojoi"></samp>
+                    <samp id="ojoi2"></samp>
+                    <samp id="ojod"></samp>
+                    <samp id="ojod2"></samp>
+                </div>
+                <span id="cuerpo"></span>
+                <span id="brazo-izq"></span>
+                <span id="brazo-der"></span>
+                <span id="pierna-izq"></span>
+                <span id="pierna-der"></span>
+            </div>
+            <div id="contenedor-palabra-secreta" class="palabra-secreta">
+            </div>
+            <div id="contenedor-letras-nombradas" class="letras-nombradas">
+            </div>
+        </section>
+
+    </main>
+    <script src="js/inicio.js"></script>
+    <script src="js/pantallaInicio.js"></script>
+</body>
+
+</html>

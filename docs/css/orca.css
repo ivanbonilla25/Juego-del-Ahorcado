@@ -1,0 +1,221 @@
+#base {
+    position: absolute;
+    width: 294px;
+    height: 5px;
+    left: 80px;
+    top: 400px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+#palo {
+    position: absolute;
+    width: 4.5px;
+    height: 360px;
+    left: 150px;
+    top: 42px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+#superior {
+    position: absolute;
+    width: 177.75px;
+    height: 4.5px;
+    left: 153px;
+    top: 42px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+#soga {
+    position: absolute;
+    width: 4.5px;
+    height: 49.5px;
+    left: 326px;
+    top: 44px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+#cabeza {
+    display: none;
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    left: 297px;
+    top: 91px;
+}
+
+#cuerpo {
+    display: none;
+    position: absolute;
+    width: 4.5px;
+    height: 135px;
+    left: 326px;
+    top: 153px;
+    background: white;
+}
+
+#pierna-izq {
+    display: none;
+    position: absolute;
+    width: 4.5px;
+    height: 72px;
+    left: 308px;
+    top: 155px;
+    background: white;
+    border-radius: 8px;
+    transform: rotate(30deg);
+}
+
+#pierna-der {
+    display: none;
+    position: absolute;
+    width: 4.5px;
+    height: 72px;
+    left: 345px;
+    top: 155px;
+    background: white;
+    border-radius: 8px;
+    transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+}
+
+#brazo-izq {
+    display: none;
+    position: absolute;
+    width: 4.5px;
+    height: 72px;
+    left: 308px;
+    top: 280px;
+    background: white;
+    border-radius: 8px;
+    transform: rotate(30deg);
+}
+
+#brazo-der {
+    display: none;
+    position: absolute;
+    width: 4.5px;
+    height: 72px;
+    left: 345px;
+    top: 280px;
+    background: white;
+    border-radius: 8px;
+    transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+}
+
+#contenedor-ojos {
+    display: none;
+}
+
+#ojoi {
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    left: 315px;
+    top: 112px;
+    background: black;
+    border-radius: 8px;
+    transform: rotate(40deg);
+}
+
+#ojoi2 {
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    left: 315px;
+    top: 112px;
+    background: black;
+    border-radius: 8px;
+    transform: rotate(130deg);
+}
+
+#ojod {
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    left: 338px;
+    top: 112px;
+    background: black;
+    border-radius: 8px;
+    transform: rotate(40deg);
+}
+
+#ojod2 {
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    left: 338px;
+    top: 112px;
+    background: black;
+    border-radius: 8px;
+    transform: rotate(130deg);
+}
+
+@media all and (max-width: 375px) {
+    #base {
+        left: 35px;
+        top: 380px;
+    }
+    #palo {
+        left: 105px;
+        top: 22px;
+    }
+    #superior {
+        left: 108px;
+        top: 22px;
+    }
+    #soga {
+        left: 281px;
+        top: 24px;
+    }
+    #cabeza {
+        left: 252px;
+        top: 71px;
+    }
+    #cuerpo {
+        left: 281px;
+        top: 133px;
+    }
+    #pierna-izq {
+        left: 263px;
+        top: 135px;
+    }
+    #pierna-der {
+        left: 300px;
+        top: 135px;
+    }
+    #brazo-izq {
+        left: 263px;
+        top: 260px;
+    }
+    #brazo-der {
+        left: 300px;
+        top: 260px;
+    }
+    #ojoi {
+        left: 270px;
+        top: 92px;
+    }
+    #ojoi2 {
+        left: 270px;
+        top: 92px;
+    }
+    #ojod {
+        left: 293px;
+        top: 92px;
+    }
+    #ojod2 {
+        left: 293px;
+        top: 92px;
+    }
+}

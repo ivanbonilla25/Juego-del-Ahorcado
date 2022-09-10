@@ -1,0 +1,248 @@
+main {
+    position: relative;
+}
+
+#contenedor-inicio {
+    position: relative;
+    background-image: url(../recursos/halloween2.jpg);
+    background-size: cover;
+    /*flex*/
+    display: flex;
+    height: 100vh;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-iniciar {
+    border: 2px solid rgb(209, 146, 30);
+    background-color: rgb(216, 108, 8);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 200px;
+    height: 60px;
+    transition: 0.8s;
+}
+
+.boton-iniciar:hover {
+    font-size: 15px;
+    color: rgb(20, 20, 20);
+    background-color: rgb(201, 98, 2);
+    box-shadow: 0px 0px 25px rgb(216, 108, 8), 0px 0px 10px rgb(255, 136, 0), 0px 0px 60px white;
+}
+
+.boton-agregar {
+    margin: 20px 0 30px;
+    padding: 15px;
+    border: 2px solid rgba(209, 146, 30);
+    border-radius: 5px;
+    opacity: 0.5;
+}
+
+.boton-agregar:hover {
+    opacity: 1;
+}
+
+.boton-agregar:active {
+    border: 1px solid rgba(209, 146, 30);
+}
+
+#contenedor-palabra-personalizada {
+    position: absolute;
+    top: -40%;
+    padding: 5px 20px 5px 20px;
+    background-color: rgba(256, 256, 256, 0.3);
+    border-radius: 25px;
+    transition: 1.3s;
+}
+
+#texto-informacion-auxiliar {
+    list-style: none;
+}
+
+#texto-informacion-auxiliar li {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 1px;
+}
+
+.texto-correcto {
+    color: rgb(9, 59, 9);
+}
+
+.texto-incorrecto {
+    color: rgb(97, 11, 11);
+}
+
+#contenedor-palabra-personalizada input {
+    width: 140px;
+    height: 5px;
+    font-size: 16px;
+    box-shadow: 0px 1px 2px black;
+    border: 0px;
+    padding: 15px;
+    margin: 0 0 5px;
+    display: block;
+}
+
+.texto-info {
+    font-size: 15px;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+}
+
+.contenedor-botones {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.boton-en-linea {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    padding: 5px;
+    border: 0px;
+    box-shadow: 0px 1px 2px black;
+    border-radius: 10%;
+}
+
+.boton-en-linea:hover {
+    background-color: rgb(206, 206, 206);
+}
+
+.boton-en-linea:active {
+    box-shadow: 0px 0px 2px black;
+}
+
+#contenedor-juego {
+    /*flex*/
+    background-image: url(../recursos/halloween2.jpg);
+    background-size: cover;
+    display: none;
+    height: 100vh;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-orca {
+    position: relative;
+    width: 440px;
+    height: 424px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+}
+
+.palabra-secreta {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    color: rgb(216, 108, 8);
+    font-size: 65px;
+    margin-top: 15px;
+    padding: 10px;
+    text-shadow: 0px 0px 25px rgb(255, 255, 255);
+}
+
+.letras-nombradas {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 10px;
+    text-shadow: 0px 0px 25px rgb(214, 154, 42);
+}
+
+#boton-retroceso {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px 8px;
+    border-radius: 50%;
+    top: 7%;
+    right: 10%;
+    transition: 0.1s;
+}
+
+#boton-retroceso img {
+    width: 40px;
+    opacity: 0.4;
+}
+
+#boton-retroceso:hover {
+    padding: 7px 10px;
+}
+
+#boton-retroceso:hover img {
+    opacity: 1;
+}
+
+#mensaje-final {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    width: 300px;
+    height: 100px;
+    padding: 5px 20px 5px 20px;
+    background-color: rgba(255, 255, 255, 0.877);
+    border: 2px solid rgb(15, 15, 15);
+    border-radius: 25px;
+    box-shadow: 20px 20px 15px black;
+    transition: all 1.3s;
+}
+
+#mensaje-final button {
+    margin: 10px;
+}
+
+.mensaje-fin-juego {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+@media all and (min-width: 376px) and (max-width: 768px) {
+    #contenedor-inicio {
+        background-position: 10%;
+    }
+    #contenedor-juego {
+        background-position: 10%;
+    }
+}
+
+@media all and (max-width: 375px) {
+    #contenedor-inicio {
+        background-position: 17%;
+    }
+    #contenedor-juego {
+        background-position: 17%;
+    }
+    .contenedor-orca {
+        background: none;
+        width: 360px;
+        border-radius: 0px;
+    }
+    .palabra-secreta {
+        font-size: 40px;
+    }
+    .letras-nombradas {
+        font-size: 35px;
+    }
+    #boton-retroceso {
+        top: 5px;
+        right: 10px;
+        transition: 0.1s;
+    }
+    #mensaje-final {
+        width: 280px;
+        background-color: rgba(255, 255, 255, 0.577);
+    }
+}
